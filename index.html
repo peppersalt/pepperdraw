@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PepperDraw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/chili-svgrepo-com.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="grid-5-columns">
+        <div class="Shapes">
+          <label class="title">Формы</label>
+          <ul class="options">
+          <div class="button-container">
+            <button class="square-button option tool rectangle" id="rectangle"></button>
+            <button class="square-button option tool circle" id="circle"></button>
+            <button class="square-button option tool triangle" id="triangle"></button>
+            <button class="square-button option tool line" id="line"></button>
+            <div class="weird-stuff">
+              <li class="option">
+                <input type="checkbox" class="checkk" id="fill-color">
+                <label for="fill-color">Заливка</label>
+              </li>
+            </div>
+          </div>
+        </ul>
+        </div>
+        <div class="Tools">
+          <label class="title">Инструменты</label>
+          <ul class="options">
+          <div class="button-container">
+            <li class="option active tool" id="brush">
+               <button class="square-button tool brush" ></button>
+            </li>
+            <li class="option tool" id="eraser">
+               <button class="square-button tool eraser"></button>
+            </li>
+            <!-- <li class="option tool bucket" id="bucket">
+              <button class="square-button tool bucket">
+
+              </button>
+           </li> -->
+          </div>
+        </ul>
+        </div>
+        <div class="colors">
+          <label class="title">Цвета</label>
+          <div>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+          </div>
+          
+          
+        </div>
+        <div class="Options">
+          <row class="option">
+            <input type="range" id="size-slider" min="1" max="30" value="5">
+          </row>
+          <row class="stubborn-btns">
+            <div class="row buttons">
+              <button class="clear-canvas">Очистить холст</button>
+              <button class="save-img">Сохранить как</button>
+              <button class="open-img">Открыть</button>
+            </div>
+          </row>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+    
+  </body>
+</html>
